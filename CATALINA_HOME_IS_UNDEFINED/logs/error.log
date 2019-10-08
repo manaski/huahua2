@@ -1,0 +1,110 @@
+[11:21:42.230][ERROR][com.mmall.util.RedisShardedPoolUtil][main] set key:keyTest value:value error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.set(RedisShardedPoolUtil.java:55) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:100) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:21:42.237][ERROR][com.mmall.util.RedisShardedPoolUtil][main] get key:keyTest error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.get(RedisShardedPoolUtil.java:86) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:102) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:21:42.240][ERROR][com.mmall.util.RedisShardedPoolUtil][main] setex key:keyex value:valueex error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.setEx(RedisShardedPoolUtil.java:39) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:104) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:21:42.243][ERROR][com.mmall.util.RedisShardedPoolUtil][main] expire key:keyTest error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.expire(RedisShardedPoolUtil.java:23) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:106) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:21:42.246][ERROR][com.mmall.util.RedisShardedPoolUtil][main] del key:keyTest error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.del(RedisShardedPoolUtil.java:101) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:108) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:21:42.249][ERROR][com.mmall.util.RedisShardedPoolUtil][main] get key:null error
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedisPool.getResource(ShardedJedisPool.java:37) ~[jedis-2.6.0.jar:na]
+	at com.mmall.common.RedisShardedPool.getJedis(RedisShardedPool.java:65) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.get(RedisShardedPoolUtil.java:86) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:111) [classes/:na]
+Caused by: java.util.NoSuchElementException: Unable to validate object
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:497) ~[commons-pool2-2.0.jar:2.0]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[commons-pool2-2.0.jar:2.0]
+	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.6.0.jar:na]
+	... 4 common frames omitted
+[11:38:33.009][ERROR][com.mmall.util.RedisShardedPoolUtil][main] get key:null error
+java.lang.NullPointerException: null
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283) ~[na:1.8.0_181]
+	at java.util.regex.Matcher.reset(Matcher.java:309) ~[na:1.8.0_181]
+	at java.util.regex.Matcher.<init>(Matcher.java:229) ~[na:1.8.0_181]
+	at java.util.regex.Pattern.matcher(Pattern.java:1093) ~[na:1.8.0_181]
+	at redis.clients.util.Sharded.getKeyTag(Sharded.java:104) ~[jedis-2.6.0.jar:na]
+	at redis.clients.util.Sharded.getShardInfo(Sharded.java:90) ~[jedis-2.6.0.jar:na]
+	at redis.clients.util.Sharded.getShard(Sharded.java:78) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedis.get(ShardedJedis.java:50) ~[jedis-2.6.0.jar:na]
+	at com.mmall.util.RedisShardedPoolUtil.get(RedisShardedPoolUtil.java:87) ~[classes/:na]
+	at com.mmall.util.RedisPoolUtil.main(RedisPoolUtil.java:111) [classes/:na]
+[11:40:01.103][ERROR][com.mmall.util.RedisPoolUtil][main] get key:null error
+redis.clients.jedis.exceptions.JedisDataException: value sent to redis cannot be null
+	at redis.clients.util.SafeEncoder.encode(SafeEncoder.java:25) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:72) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.Jedis.get(Jedis.java:100) ~[jedis-2.6.0.jar:na]
+	at com.mmall.util.RedisPoolUtil.get(RedisPoolUtil.java:72) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.main(RedisShardedPoolUtil.java:143) [classes/:na]
+[11:46:47.821][ERROR][com.mmall.util.RedisPoolUtil][main] get key:null error
+redis.clients.jedis.exceptions.JedisDataException: value sent to redis cannot be null
+	at redis.clients.util.SafeEncoder.encode(SafeEncoder.java:25) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:72) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.Jedis.get(Jedis.java:100) ~[jedis-2.6.0.jar:na]
+	at com.mmall.util.RedisPoolUtil.get(RedisPoolUtil.java:72) ~[classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.main(RedisShardedPoolUtil.java:143) [classes/:na]
+[12:01:10.925][ERROR][com.mmall.util.RedisShardedPoolUtil][main] get key:null error
+java.lang.NullPointerException: null
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283) ~[na:1.8.0_181]
+	at java.util.regex.Matcher.reset(Matcher.java:309) ~[na:1.8.0_181]
+	at java.util.regex.Matcher.<init>(Matcher.java:229) ~[na:1.8.0_181]
+	at java.util.regex.Pattern.matcher(Pattern.java:1093) ~[na:1.8.0_181]
+	at redis.clients.util.Sharded.getKeyTag(Sharded.java:104) ~[jedis-2.6.0.jar:na]
+	at redis.clients.util.Sharded.getShardInfo(Sharded.java:90) ~[jedis-2.6.0.jar:na]
+	at redis.clients.util.Sharded.getShard(Sharded.java:78) ~[jedis-2.6.0.jar:na]
+	at redis.clients.jedis.ShardedJedis.get(ShardedJedis.java:50) ~[jedis-2.6.0.jar:na]
+	at com.mmall.util.RedisShardedPoolUtil.get(RedisShardedPoolUtil.java:89) [classes/:na]
+	at com.mmall.util.RedisShardedPoolUtil.main(RedisShardedPoolUtil.java:145) [classes/:na]

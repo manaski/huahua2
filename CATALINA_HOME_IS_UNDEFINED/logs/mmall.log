@@ -1,0 +1,11 @@
+[15:43:32.932][INFO][com.mmall.util.RedisShardedPoolUtil][main] 结束
+[15:44:22.440][INFO][com.mmall.util.RedisShardedPoolUtil][main] 结束
+[15:56:19.069][INFO][com.mmall.task.CloseOrderTask][main] 获取CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:56:19.081][INFO][com.mmall.task.CloseOrderTask][main] 释放CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:56:19.081][INFO][com.mmall.task.CloseOrderTask][main] ===============================
+[15:58:17.246][INFO][com.mmall.task.CloseOrderTask][main] 获取CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:58:17.251][INFO][com.mmall.task.CloseOrderTask][main] 释放CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:58:17.251][INFO][com.mmall.task.CloseOrderTask][main] ===============================
+[15:58:25.671][INFO][com.mmall.task.CloseOrderTask][main] 获取CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:58:25.676][INFO][com.mmall.task.CloseOrderTask][main] 释放CLOSE_ORDER_TASK_LOCK,ThreadName:main
+[15:58:25.676][INFO][com.mmall.task.CloseOrderTask][main] ===============================
